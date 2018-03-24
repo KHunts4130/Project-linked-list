@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  font-family: 'open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.main-left {
+  display: inline-block;
+  background-color: #455A64;
+  width: 50vw;
+  height: 100vh;
+}
+
+.main-left-container {
+  margin: 0 auto;
+  background-color: #455A64;
+  box-sizing: border-box;
+  width: 85%;
+}
+
+.main-left-title {
+  margin: 30% 0 40px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 800;
+}
+
+.main-left-logo {
+  vertical-align: middle;
+  height: 90px;
+  width: 90px;
+}
+
+/*.main-left-input-field*/
+
+
+
+.main-left-inputURL,
+.main-left-input-field {
+  margin-bottom: 58px;
+  color: #445A64;
+  width: 96.5%;
+  height: 45px;
+  padding: 1px 0 1px 15px;
+  font-size: 30px;
+  outline: none;
+}
+.main-left-input-URL::placeholder,
+.main-left-input-title::placeholder::placeholder {
+  color: #BDBFC1;
+  font-size: 30px;
+}
+
+.main-left-button-enter {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+
+.main-left-button-enter:hover {
+  background-color: #FFD773
+
+}
+
+.main-right {
+  background-color: #CFD8DC;
+  width: 50vw;
+  height: 100vh;
+  display: inline-block;
+  float: right;
+}
+
+li {
+  background-color: #FFFFFF;
+  width: 90%;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px auto:;
+  list-style-type: none;
+ }
+
+.main-right-card-list {}
+
+.main-right-card-title{
+  color: #445A64;
+  margin-top: 5px;
+  margin-left: 13px;
+  font-weight: 800;
+  font-size: 30px;
+  width:100%;
+}
+
+.main-right-card-link {
+  display: block;  
+  color: #607D8B;
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 100%;
+  font-size: 22px;
+  text-decoration: underline #F2F4F4;
+}
+
+.main-right-ard-button:hover,
+.main-right-card-link:hover
+ {
+  text-decoration: underline #FFC107;
+  font-weight: 800;
+} 
+
+.main-right-card-button { 
+  color: #445A64;
+  margin-bottom: 10px;
+  text-decoration: underline #F2F4F4;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.main-right-card-button-read {
+  /*position: relative;*/
+  left: 10px;
+  top: 50px;
+  }
+
+.main-right-card-button-read-clicked {
+  background-color: #F2F4F4;
+  color: #F05A28;
+  font-weight: 800; 
+}
+
+.main-right-card-button-delete {
+  margin-top: 85px;
+}
+
+.main-right-card-button-delete-read {
+  background-color: #F2F4F4;
+}
+
+.read {
+  background-color: #F2F4F4;
+}
+

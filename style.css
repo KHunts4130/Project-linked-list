@@ -4,6 +4,16 @@
   font-weight: 400;
 }
 
+li {
+  background-color: #FFFFFF;
+  width: 90%;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px auto;
+  box-sizing: content-box;
+  list-style-type: none;
+ }
+
 .main-left {
   display: inline-block;
   background-color: #455A64;
@@ -31,9 +41,6 @@
   height: 90px;
   width: 90px;
 }
-
-/*.main-left-input-field*/
-
 
 
 .main-left-inputURL,
@@ -65,28 +72,24 @@
 
 
 .main-left-button-enter:hover {
-  background-color: #FFD773
-
+  background-color: #FFD773;
 }
+
+
+
 
 .main-right {
   background-color: #CFD8DC;
-  width: 50vw;
+  width: 50%;
   height: 100vh;
   display: inline-block;
   float: right;
 }
 
-li {
-  background-color: #FFFFFF;
-  width: 90%;
-  height: 200px;
-  border: 1px solid black;
-  margin: 10px auto:;
-  list-style-type: none;
- }
 
-.main-right-card-list {}
+.main-right-card-list {
+
+}
 
 .main-right-card-title{
   color: #445A64;
@@ -124,7 +127,6 @@ li {
 }
 
 .main-right-card-button-read {
-  /*position: relative;*/
   left: 10px;
   top: 50px;
   }
@@ -145,5 +147,36 @@ li {
 
 .read {
   background-color: #F2F4F4;
+}
+
+/*responsive additions*/
+
+@media screen and (min-width: 900px) {
+  .main-left {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-left {
+    height: 100%;
+    width: 100%;
+  }
+
+  /*is main-content needed?*/
+
+  .main-content {
+    float: none;
+    height: 400px;
+    width: 100%;
+  }
+
+  .main-right {
+    background-color: #CFD8DC;
+    float: none;
+    height: 100%;
+    width: 100%;
+  }
 }
 

@@ -1,18 +1,27 @@
 * {
+  box-sizing: border-box;
   margin: 0;
-  font-family: 'open Sans', sans-serif;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
 li {
   background-color: #FFFFFF;
-  width: 90%;
+  /*width: 100%;*/
   height: 200px;
   border: 1px solid black;
-  margin: 10px auto;
+  /*margin-top: 20PX;*/
   box-sizing: content-box;
   list-style-type: none;
+  /*padding-right: 10px;*/
+  margin: 10px 0 20px;
  }
+
+main {
+  display: flex;
+  width: 100%;
+}
 
 .main-left {
   display: inline-block;
@@ -32,14 +41,14 @@ li {
   margin: 30% 0 40px;
   color: #FFFFFF;
   text-align: center;
-  font-size: 70px;
+  font-size: 54px;
   font-weight: 800;
 }
 
 .main-left-logo {
   vertical-align: middle;
-  height: 90px;
-  width: 90px;
+  width: 18%;
+  padding-bottom: 11px;
 }
 
 
@@ -47,7 +56,7 @@ li {
 .main-left-input-field {
   margin-bottom: 58px;
   color: #445A64;
-  width: 96.5%;
+  width: 100%;
   height: 45px;
   padding: 1px 0 1px 15px;
   font-size: 30px;
@@ -70,56 +79,60 @@ li {
   font-weight: 800;
 }
 
-
 .main-left-button-enter:hover {
   background-color: #FFD773;
 }
 
-
-
-
 .main-right {
   background-color: #CFD8DC;
-  width: 50%;
+  width: 51%;
   height: 100vh;
   display: inline-block;
-  float: right;
-}
-
-
-.main-right-card-list {
-
+  overflow-x: scroll;
+  vertical-align: top;
+  padding: 10px 20px;
 }
 
 .main-right-card-title{
   color: #445A64;
   margin-top: 5px;
-  margin-left: 13px;
+  margin-left: 16px;
   font-weight: 800;
   font-size: 30px;
-  width:100%;
+  width:92%;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: #CFD8DC;
+  padding-bottom: 20px;
+  padding-left: 10px;
 }
 
 .main-right-card-link {
   display: block;  
   color: #607D8B;
   margin-top: 10px;
-  margin-left: 15px;
-  width: 100%;
+  margin-left: 16px;
+  width: 92%;
   font-size: 22px;
   text-decoration: underline #F2F4F4;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: #CFD8DC;
+  padding-bottom: 20px;
+  padding-left: 10px;
 }
 
-.main-right-ard-button:hover,
+.main-right-card-button:hover,
 .main-right-card-link:hover
  {
   text-decoration: underline #FFC107;
   font-weight: 800;
+  cursor: pointer;
 } 
 
 .main-right-card-button { 
   color: #445A64;
-  margin-bottom: 10px;
+  color: none;
   text-decoration: underline #F2F4F4;
   border: none;
   outline: none;
@@ -129,27 +142,34 @@ li {
 .main-right-card-button-read {
   left: 10px;
   top: 50px;
+  background-color: transparent;
+  color: #455A64;
+  margin: 45px 10px;
   }
 
 .main-right-card-button-read-clicked {
   background-color: #F2F4F4;
-  color: #F05A28;
+}
+
+.main-right-card-button-read: active{
+  background-color: #F2F4F4:;
   font-weight: 800; 
+  /*color: #F2F4F4;*/
 }
 
 .main-right-card-button-delete {
-  margin-top: 85px;
+  float: right;
+  background-color: transparent;
+  margin: 45px 10px;
 }
 
 .main-right-card-button-delete-read {
-  background-color: #F2F4F4;
+  background-color: transparent;
 }
 
 .read {
   background-color: #F2F4F4;
 }
-
-/*responsive additions*/
 
 @media screen and (min-width: 900px) {
   .main-left {
@@ -157,14 +177,21 @@ li {
     width: 50%;
   }
 }
+/*try max-width: 550*/
 
 @media screen and (max-width: 550px) {
+  main {
+    display: inline-block;
+  }
+
   .main-left {
     height: 100%;
     width: 100%;
   }
 
-  /*is main-content needed?*/
+  .main-right-card-list{
+    box-sizing: border-box;
+  }
 
   .main-content {
     float: none;

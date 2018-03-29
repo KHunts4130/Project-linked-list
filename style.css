@@ -21,6 +21,10 @@ main {
   width: 100%;
 }
 
+p {
+ color: white;
+}
+
 .main-left {
   display: inline-block;
   background-color: #455A64;

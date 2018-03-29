@@ -6,30 +6,31 @@
   <link type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <main>
-    <section class="main-left">
+    <section role="form" class="main-left">
       <div class="main-left-container">
         <h1 class="main-left-title">Linked <span><img class="main-left-logo" src="images/linked-list-logo.svg" alt="Linked List Logo"></span> List</h1>
-          <input type="text" class="main-left-input-field" placeholder="Website Title">
-          <!-- <label>Title input field</label> -->
-          <input type="text" class="main-left-inputURL" placeholder="Website URL">
-          <!-- <label>URL input field</label> -->
+        <input type="text" class="main-left-input-field" placeholder="Website Title">
+        <input type="text" class="main-left-inputURL" placeholder="Website URL">
         <button class="main-left-button-enter">Enter</button>
+        <section class="counters">
+          <p class="cardsRead"></p>
+          <br>
+          <p class="cardsUnread"></p>
+          <br>
+          <p class="cardSum"></p>
+          <br>
+        </section>
       </div>
     </section>
     <section class="main-right">
       <ul class="main-right-card-list">
       </ul>
-    </section>
+    </section> 
+  <script type="text/javascript" src="script.js"></script>
   </main>
-</body>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-<script src="script.js"></script>
-</html>
 </body>
 </html>
